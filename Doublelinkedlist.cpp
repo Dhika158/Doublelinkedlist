@@ -33,5 +33,15 @@ class Doublelinkedlist
 
         // Step 2: Assign value to the data new fields
         newNode->noMhs = nim;
+
+        // Step 3: Insert at beginning if list is empty on nim is smallest
+        if (START == NULL || nim <= START->noMhs)
+        {
+            if (START != NULL && nim == START->noMhs)
+            {
+                cout << "\nDuplicate number not allowed" << endl;
+                return;
+            }
+        }
       }
 }
