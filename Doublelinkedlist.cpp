@@ -56,5 +56,10 @@ class Doublelinkedlist
             START = newNode;
             return;
         }
+
+        // insert in between node
+        // Step 8: Locate position for insertion
+        Node *curret = START;
+        while (curret->next != NULL && curret->next->noMhs < nim)
       }
 }
